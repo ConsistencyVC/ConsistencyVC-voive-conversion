@@ -10,4 +10,4 @@ Use ppg.py to generate the PPG.
 
 Use preprocess_ppg.py to generate the WEO.
 
-<!-- 科研好累，或许我不适合科研。 -->
+<!-- 科研好累。 -->

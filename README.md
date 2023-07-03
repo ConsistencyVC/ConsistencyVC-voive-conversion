@@ -14,4 +14,8 @@ Use preprocess_ppg.py to generate the WEO.
 
 # Inference with the pre-trained models
 
+Use whisperconvert_exp.py to achieve voice conversion using weo as content information.
+
+Useppgemoconvert_exp.py to achieve voice conversion using ppg as content information.
+
 # Train models by your dataset

@@ -11,3 +11,7 @@ Use ppg.py to generate the PPG.
 Use preprocess_ppg.py to generate the WEO.
 
 <!-- 科研好累。 -->
+
+# Inference with the pre-trained models
+
+# Train models by your dataset

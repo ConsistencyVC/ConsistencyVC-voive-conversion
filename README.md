@@ -6,9 +6,7 @@ The whisper medium model can be downloaded here: https://drive.google.com/file/d
 
 The pre-trained models are available here:https://drive.google.com/drive/folders/1KvMN1V8BWCzJd-N8hfyP283rLQBKIbig?usp=sharing
 
-Use ppg.py to generate the PPG.
 
-Use preprocess_ppg.py to generate the WEO.
 
 <!-- 科研好累。 -->
 
@@ -16,6 +14,16 @@ Use preprocess_ppg.py to generate the WEO.
 
 Use whisperconvert_exp.py to achieve voice conversion using weo as content information.
 
-Useppgemoconvert_exp.py to achieve voice conversion using ppg as content information.
+Use ppgemoconvert_exp.py to achieve voice conversion using ppg as content information.
 
 # Train models by your dataset
+
+Use ppg.py to generate the PPG.
+
+Use preprocess_ppg.py to generate the WEO.
+
+If you want to use WEO to train a cross-lingual voice conversion model:
+<!-- python train.py -c configs/freevc.json -m freevc -->
+
+If you want to use PPG to train a expressive voice conversion model:
+<!-- python train.py -c configs/freevc.json -m freevc -->

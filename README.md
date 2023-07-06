@@ -21,7 +21,7 @@ Use ppg.py to generate the PPG.
 
 Use preprocess_ppg.py to generate the WEO.
 
-If you want to use WEO to train a cross-lingual voice conversion model:
+## If you want to use WEO to train a cross-lingual voice conversion model:
 
 First you need to train the model without speaker consistency loss for 100k steps:
 
@@ -33,14 +33,38 @@ loss_gen_all = loss_gen + loss_fm + loss_mel + loss_kl# + loss_emo
 
 run the py file:
 
-python train_whisper_emo.py -c configs/freevc.json -m freevc -->
+```python
+python train_whisper_emo.py -c configs/cvc-whispers-multi.json -m cvc-whispers-three
+```
 
-Then change back to finetune this model with speaker consistency loss
-If you want to use PPG to train an expressive voice conversion model:
-<!-- python train.py -c configs/freevc.json -m freevc cvc-eng-ppgs-three-emo-cycleloss.json
-cvc-eng-ppgs-three-emo.json
-cvc-whispers-multi.json
-cvc-whispers-three-emo.json-->
+Then change [this line](https://github.com/ConsistencyVC/ConsistencyVC-voive-conversion/blob/71cf17a5b65c12987ea7fba74d1d173ea1aae5cb/train_whisper_emo.py#L214) back to finetune this model with speaker consistency loss
+
+```python
+python train_whisper_emo.py -c configs/cvc-whispers-three-emo.json -m cvc-whispers-three
+```
+
+## If you want to use PPG to train an expressive voice conversion model:
+
+First you need to train the model without speaker consistency loss for 100k steps:
+
+change [this line](https://github.com/ConsistencyVC/ConsistencyVC-voive-conversion/blob/71cf17a5b65c12987ea7fba74d1d173ea1aae5cb/train_eng_ppg_emo_loss.py#L311) to 
+
+```python
+loss_gen_all = loss_gen + loss_fm + loss_mel + loss_kl# + loss_emo
+```
+
+run the py file:
+
+```python
+python train_eng_ppg_emo_loss.py -c configs/cvc-eng-ppgs-three-emo.json -m cvc-eng-ppgs-three-emo
+```
+
+Then change [this line](https://github.com/ConsistencyVC/ConsistencyVC-voive-conversion/blob/71cf17a5b65c12987ea7fba74d1d173ea1aae5cb/train_eng_ppg_emo_loss.py#L311) back to finetune this model with speaker consistency loss
+
+```python
+python train_whisper_emo.py -c configs/cvc-eng-ppgs-three-emo-cycleloss.json -m cvc-eng-ppgs-three-emo
+```
+
 
 # Reference
 

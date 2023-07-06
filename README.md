@@ -68,8 +68,10 @@ python train_whisper_emo.py -c configs/cvc-eng-ppgs-three-emo-cycleloss.json -m 
 
 # Reference
 
-The code structure is based on [FreeVC-s](https://github.com/OlaWod/FreeVC)
+The code structure is based on [FreeVC-s](https://github.com/OlaWod/FreeVC). Suggestion: please follow the instruction of FreeVC to install python requirements.
 
-The WEO content feature is based on [LoraSVC](https://github.com/PlayVoice/lora-svc)
+The WEO content feature is based on [LoraSVC](https://github.com/PlayVoice/lora-svc).
 
-The PPG is from the [phoneme recognition model](https://huggingface.co/speech31/wav2vec2-large-english-TIMIT-phoneme_v3)
+The PPG is from the [phoneme recognition model](https://huggingface.co/speech31/wav2vec2-large-english-TIMIT-phoneme_v3).
+
+

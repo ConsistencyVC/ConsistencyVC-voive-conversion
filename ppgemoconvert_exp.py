@@ -17,7 +17,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--hpfile", type=str, default="./logs/cvc-44ppg-emoloss/config.json", help="path to json config file")
     parser.add_argument("--ptfile", type=str, default="./logs/cvc-44ppg-emoloss/G_cvc-44ppg-emoloss.pth", help="path to pth file")
-    parser.add_argument("--txtpath", type=str, default="convert_surprise.txt", help="path to txt file")
     parser.add_argument("--outdir", type=str, default="output_exp/20_exp_cvc-44ppg-emoloss", help="path to output dir")
     parser.add_argument("--use_timestamp", default=False, action="store_true")
     args = parser.parse_args()

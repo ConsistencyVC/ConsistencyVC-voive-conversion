@@ -7,7 +7,6 @@ The whisper medium model can be downloaded here: https://drive.google.com/file/d
 The pre-trained models are available here:https://drive.google.com/drive/folders/1KvMN1V8BWCzJd-N8hfyP283rLQBKIbig?usp=sharing
 
 
-
 <!-- 科研好累。 -->
 
 # Inference with the pre-trained models
@@ -23,7 +22,15 @@ Use ppg.py to generate the PPG.
 Use preprocess_ppg.py to generate the WEO.
 
 If you want to use WEO to train a cross-lingual voice conversion model:
-<!-- python train.py -c configs/freevc.json -m freevc -->
+python train_whisper_emo.py -c configs/freevc.json -m freevc -->
 
 If you want to use PPG to train a expressive voice conversion model:
 <!-- python train.py -c configs/freevc.json -m freevc -->
+
+# Reference
+
+The code structure is based on [FreeVC-s](https://github.com/OlaWod/FreeVC)
+
+The WEO content feature is based on [LoraSVC](https://github.com/PlayVoice/lora-svc)
+
+The PPG is from the [phoneme recognition model](https://huggingface.co/speech31/wav2vec2-large-english-TIMIT-phoneme_v3)

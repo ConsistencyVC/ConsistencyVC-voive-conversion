@@ -18,7 +18,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--hpfile", type=str, default="./logs/cvc-whispers-three-emo-loss/config.json", help="path to json config file")
     parser.add_argument("--ptfile", type=str, default="./logs/cvc-whispers-three-emo-loss/G_cvc-whispers-three-emo-loss.pth", help="path to pth file")
-    parser.add_argument("--txtpath", type=str, default="exp_crosslingual.txt", help="path to txt file")
     parser.add_argument("--outdir", type=str, default="output/60_exp_crosslingual_whispers-three-emo-loss", help="path to output dir")
     parser.add_argument("--use_timestamp", default=False, action="store_true")
     args = parser.parse_args()

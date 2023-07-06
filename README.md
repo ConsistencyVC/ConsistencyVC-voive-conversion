@@ -62,7 +62,7 @@ python train_eng_ppg_emo_loss.py -c configs/cvc-eng-ppgs-three-emo.json -m cvc-e
 Then change [this line](https://github.com/ConsistencyVC/ConsistencyVC-voive-conversion/blob/71cf17a5b65c12987ea7fba74d1d173ea1aae5cb/train_eng_ppg_emo_loss.py#L311) back to finetune this model with speaker consistency loss
 
 ```python
-python train_whisper_emo.py -c configs/cvc-eng-ppgs-three-emo-cycleloss.json -m cvc-eng-ppgs-three-emo
+python train_eng_ppg_emo_loss.py -c configs/cvc-eng-ppgs-three-emo-cycleloss.json -m cvc-eng-ppgs-three-emo
 ```
 
 

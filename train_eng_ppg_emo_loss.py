@@ -308,7 +308,7 @@ def train_and_evaluate(rank, epoch, hps, nets, optims, schedulers, scaler, loade
         #print("loss_gen, losses_gen",loss_gen, losses_gen)
         loss_emo=F.l1_loss(emo_y_hat.detach(),emo_y.detach()) * hps.train.c_mel * 0.5
         #print("loss_emo",loss_emo)
-        loss_gen_all = loss_gen + loss_fm + loss_mel + loss_kl# + loss_emo
+        loss_gen_all = loss_gen + loss_fm + loss_mel + loss_kl + loss_emo
     optim_g.zero_grad()
     scaler.scale(loss_gen_all).backward()
     scaler.unscale_(optim_g)

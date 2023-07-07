@@ -1,5 +1,7 @@
 # ConsistencyVC-voive-conversion
 
+## Using joint training speaker encoder with consistency loss to achieve cross-lingual voice conversion and expressive voice conversion
+
 Demo page: https://consistencyvc.github.io/ConsistencyVC-demo-page
 
 The whisper medium model can be downloaded here: https://drive.google.com/file/d/1PZsfQg3PUZuu1k6nHvavd6OcOB_8m1Aa/view?usp=drive_link

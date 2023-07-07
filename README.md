@@ -22,7 +22,7 @@ Copy the root of the reference speech to [tgt](https://github.com/ConsistencyVC/
 
 Use whisperconvert_exp.py to achieve voice conversion using WEO as content information.
 
-For ConsistencyEVC, Use ppgemoconvert_exp.py to achieve voice conversion using ppg as content information.
+For ConsistencyEVC, use ppgemoconvert_exp.py to achieve voice conversion using ppg as content information.
 
 # Train models by your dataset
 

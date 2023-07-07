@@ -9,6 +9,9 @@ The whisper medium model can be downloaded here: https://drive.google.com/file/d
 The pre-trained models are available here:https://drive.google.com/drive/folders/1KvMN1V8BWCzJd-N8hfyP283rLQBKIbig?usp=sharing
 
 
+<img src="cvc627.png" alt="cvc" width="100%">
+
+
 <!-- 科研好累。 -->
 
 # Inference with the pre-trained models

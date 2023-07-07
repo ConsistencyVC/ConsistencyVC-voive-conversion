@@ -14,11 +14,15 @@ The pre-trained models are available here:https://drive.google.com/drive/folders
 
 <!-- 科研好累。 -->
 
-# Inference with the pre-trained models
+# Inference with the pre-trained models (use WEO as example)
 
-Use whisperconvert_exp.py to achieve voice conversion using weo as content information.
+Generate the WEO of the source speech in [src](https://github.com/ConsistencyVC/ConsistencyVC-voive-conversion/blob/467ed5e632b2b328d01c87cb73e92b26b36deb05/whisperconvert_exp.py#L39C1-L39C1) by preprocess_ppg.py.
 
-Use ppgemoconvert_exp.py to achieve voice conversion using ppg as content information.
+Copy the root of the reference speech to [tgt](https://github.com/ConsistencyVC/ConsistencyVC-voive-conversion/blob/467ed5e632b2b328d01c87cb73e92b26b36deb05/whisperconvert_exp.py#L47)
+
+Use whisperconvert_exp.py to achieve voice conversion using WEO as content information.
+
+For ConsistencyEVC, Use ppgemoconvert_exp.py to achieve voice conversion using ppg as content information.
 
 # Train models by your dataset
 

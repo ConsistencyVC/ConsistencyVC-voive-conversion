@@ -11,8 +11,7 @@ import torch
 import torchvision
 from torch.nn import functional as F
 from commons import sequence_mask
-import hifigan
-from wavlm import WavLM, WavLMConfig
+
 
 MATPLOTLIB_FLAG = False
 
@@ -20,13 +19,7 @@ logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 logger = logging
 
 
-def get_cmodel(rank):
-    checkpoint = torch.load('wavlm/WavLM-Large.pt')
-    cfg = WavLMConfig(checkpoint['cfg'])
-    cmodel = WavLM(cfg).cuda(rank)
-    cmodel.load_state_dict(checkpoint['model'])
-    cmodel.eval()
-    return cmodel
+
     
     
 def get_content(cmodel, y):
@@ -36,17 +29,7 @@ def get_content(cmodel, y):
     return c
 
 
-def get_vocoder(rank):
-    with open("hifigan/config.json", "r") as f:
-        config = json.load(f)
-    config = hifigan.AttrDict(config)
-    vocoder = hifigan.Generator(config)
-    ckpt = torch.load("hifigan/generator_v1")
-    vocoder.load_state_dict(ckpt["generator"])
-    vocoder.eval()
-    vocoder.remove_weight_norm()
-    vocoder.cuda(rank)
-    return vocoder
+
     
     
 def transform(mel, height): # 68-92

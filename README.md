@@ -8,6 +8,7 @@ The whisper medium model can be downloaded here: https://drive.google.com/file/d
 
 The pre-trained models are available here:https://drive.google.com/drive/folders/1KvMN1V8BWCzJd-N8hfyP283rLQBKIbig?usp=sharing
 
+Note: The audio needs to be 16KHz for train and inference.
 
 <img src="cvc627.png" alt="cvc" width="100%">
 

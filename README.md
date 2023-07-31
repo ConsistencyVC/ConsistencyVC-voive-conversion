@@ -27,7 +27,7 @@ For ConsistencyEVC, use ppgemoconvert_exp.py to achieve voice conversion using p
 
 # Inference for the long audio
 I uploaded a new py file for the inference of long audio. 
-
+You don't need to run the whisper by another file, just change [this part](https://github.com/ConsistencyVC/ConsistencyVC-voive-conversion/blob/83f72b0801240e7d932c9314431df6e75f2d1c22/whisperconvert_longaudio.py#L41) and run this py file.
 
 # Train models by your dataset
 

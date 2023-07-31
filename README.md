@@ -25,6 +25,10 @@ Use whisperconvert_exp.py to achieve voice conversion using WEO as content infor
 
 For ConsistencyEVC, use ppgemoconvert_exp.py to achieve voice conversion using ppg as content information.
 
+# Inference for the long audio
+I uploaded a new py file for the inference of long audio. 
+
+
 # Train models by your dataset
 
 Use ppg.py to generate the PPG.

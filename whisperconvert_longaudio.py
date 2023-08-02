@@ -98,7 +98,7 @@ if __name__ == "__main__":
             audiolen=audio.shape[0]
             print(audiolen)
             src_wav_wavs=[]
-            num=int(audiolen/(sr*25))
+            num=int(audiolen/(sr*20))
             print(num)
             whisper = load_model(os.path.join("whisper_pretrain", "medium.pt"))
             for i in range(0,num+1):
